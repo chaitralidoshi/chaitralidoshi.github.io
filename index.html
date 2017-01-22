@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="w3.css">
    <link rel="stylesheet" href="googleapis.css">
-   <link rel="stylesheet" href="awesome.css">
+   <link rel="stylesheet" href="font-awsome.min.css">
    <style>
       body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       .w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
@@ -15,20 +15,20 @@
       <nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav">
          <br>
          <div class="w3-container">
-            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+            <a href="#" onclick="nav_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
             <i class="fa fa-remove"></i>
             </a>
             <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
             <h4 class="w3-padding-0"><b>PORTFOLIO</b></h4>
          </div>
-         <a href="#about" onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-         <a href="#project" onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a>
-         <a href="#skill" onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-gear fa-fw w3-margin-right"></i>TECHNICAL SKILLS</a>
-         <a href="#course" onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-book fa-fw w3-margin-right"></i>COURSES</a>
-         <a href="#contact" onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+         <a href="#about" onclick="nav_close()" class="w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+         <a href="#project" onclick="nav_close()" class="w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a>
+         <a href="#skill" onclick="nav_close()" class="w3-padding w3-text-teal"><i class="fa fa-gear fa-fw w3-margin-right"></i>TECHNICAL SKILLS</a>
+         <a href="#course" onclick="nav_close()" class="w3-padding w3-text-teal"><i class="fa fa-book fa-fw w3-margin-right"></i>COURSES</a>
+         <a href="#contact" onclick="nav_close()" class="w3-padding w3-text-teal"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
       </nav>
       <!-- Overlay effect when opening sidenav on small screens -->
-      <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+      <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="nav_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
       <!-- !PAGE CONTENT! -->
       <div class="w3-main" style="margin-left:300px">
 	  
@@ -42,7 +42,9 @@
          <div class="w3-container w3-padding-large" id="about">
             <h4><b>About Me</b></h4>
             <div class="w3-container w3-white">
-               <p>I am a fucking BITCH</p>
+               <p>Hi, I am Chaitrali Doshi. I am currently pursuing Master's from Rivier University. I have come to Rivier University to study Computer Science because I want to learn more about technology.</p>
+			   <h5><strong>Motivation</strong></h5>
+			   <p>It really amuses me how technology is growing every single day, that is why I decided to peruse Bachelor's in Information Technology. Current Technological world has drove me towards pursuing my Master's degree in Computer Science. I would like to become proficient Software Engineer and contribute towards technology.   </p>
             </div>
             <hr>
          </div>
@@ -141,12 +143,12 @@
       </div>
       <script>
          // Script to open and close sidenav
-         function w3_open() {
+         function nav_open() {
              document.getElementById("mySidenav").style.display = "block";
              document.getElementById("myOverlay").style.display = "block";
          }
           
-         function w3_close() {
+         function nav_close() {
              document.getElementById("mySidenav").style.display = "none";
              document.getElementById("myOverlay").style.display = "none";
          }
