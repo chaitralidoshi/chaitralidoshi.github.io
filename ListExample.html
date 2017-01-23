@@ -4,27 +4,44 @@
 	<head>
 
 	  <meta charset="UTF-8"                                  />
-	  <meta name="description" content="CS597 Exercise 1.2"  />
 	  <meta name="keywords"    content="Lists"               />
 	  <meta name="author"      content="Chaitrali Doshi" />
 	  <meta name="DC.date"     content="2017-01-17"          />
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/w3.css">
+      <link rel="stylesheet" href="css/googleapis.css">
+      <link rel="stylesheet" href="css/font-awsome.min.css">
   
-	  <title>CS597 Exercise 1.2 - Chaitrali Doshi</title>
+	  <title>Chaitrali Doshi</title>
   
 	</head>
 
-	<body>
+	<body class="w3-light-grey w3-content" style="max-width:1600px">
 
 		<section>
-	
+		<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav">
+         <br>
+         <div class="w3-container">
+            <a href="#" onclick="nav_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+            <i class="fa fa-remove"></i>
+            </a>
+            <img src="images/avatar.jpg" style="width:60%;" class="w3-round"><br><br>
+            <h4 class="w3-padding-0"><b>Movie Interests</b></h4>
+         </div>
+			<a href="#top_10_Movies" onclick="nav_close()" class="w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>Top 10 Movies</a> 
+            <a href="#favorite_TV-Series" onclick="nav_close()" class="w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Favorite TV-Series</a>
+		</nav>
 			<header>
-				<h1>CS597 Exercise 1.2 - Chaitrali Doshi</h1>
+				<h1>Chaitrali Doshi</h1>
 			</header>
-  
+			<div class="w3-main" style="margin-left:300px">
 			<article>
+				<div class="w3-container w3-padding-large" id="top_10_Movies">
 				<h2>Lists of Top 10 Movies</h2>
 
 				<!-- List the top 10 movies you like -->	
+				<div class="w3-container w3-white">
 				<ol>
 					<li><strong>The Lord of the Rings Series  </strong> <p>A young Hobbit named Frodo is thrown on an amazing adventure, when he is appointed the job of destroying the one ring which was created by the dark lord Sauron.  He is assigned with warriors including Gandalf, Aragorn and Boromir. It's not going to be an easy journey for the Fellowship of the Ring, on the ultimate quest to rid Middle-Earth of all evil.</p></li>
 					<li><strong>The Hobbit Series</strong><p>The Hobbit is set in a time "between the Dawn of Færie and the Dominion of Men", and follows the quest of home-loving hobbit Bilbo Baggins to win a share of the treasure guarded by Smaug the dragon. Bilbo's journey takes him from light-hearted, rural surroundings into more sinister territory.</p></li>
@@ -37,12 +54,16 @@
 					<li><strong>Interstellar</strong><p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p></li>
 					<li><strong>WALL-E</strong><p>In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.</p></li>
 				</ol>
-				
+				</div>
+				</div>
 			</article>
 
 	
 			<article >
+				<!-- List the Most Popular Indian Dishes -->
 				<h2>List of favorite TV-Series</h2>
+				<div class="w3-container w3-padding-large" id="favorite_TV-Series">
+				<div class="w3-container w3-white">
 					<ul>
 						<li>Breaking Bad</li>
 						<li>House of Cards</li>
@@ -55,22 +76,11 @@
 						<li>Sherlock</li>
 						<li>Sarabhai vs Sarabhai</li>
 					</ul>
-				<!-- List the Most Popular Indian Dishes -->
+				</div>
+				</div>
 			</article>
 	
-			<article>
-				<h2>Significant Dates in the History of Film-Making</h2>
-				<dl>
-					<dt>1895, First Movie:</dt>
-					<dd>The world's first hand-tinted motion picture was produced by Thomas Edison's company, Edison Studios. </dd>
-					<dt>1912, First Color Movie</dt>
-					<dd>The first colored film ever to be produced was &ldquo;With our King and Queen Through India&rdquo;.</dd>
-				</dl>
-	
-				<!-- Provide a definition list of at least two dates as terms with title, 
-					 time, and a brief description as definitions for each date. -->
-			</article>
-
+		</div>
 		</section>
 	
 	</body>
