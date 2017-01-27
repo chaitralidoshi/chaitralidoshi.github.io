@@ -1,0 +1,104 @@
+/***************************************************************************/	
+/* Name        : print-styles.css                                          */
+/* Description : Print style sheet for exercise 3.1                        */
+/* Course      : CS597 Multimedia and Web Design, SP17 AH1                 */
+/* Author      : Course Instructor                                         */
+/* History     : 2017-01-18 Created by Course Instructor                   */
+/***************************************************************************/
+	
+/***************************************************************************/	
+/* PART 1 - LAYOUT and COLORS                                              */
+/***************************************************************************/
+
+@page {
+	margin            : 1in 0.5in 0.5in ; /* 1. Top 1 inch, Right/Left .5 inch, Bottom .5 inch*/
+	orphans           : 4; 
+	widows            : 3; 
+	}
+
+body {
+	background        : #000; /* 2. White */
+	color             : #fff; /* 3. Black */
+	font-size         : 12pt; /* 4. 12 point */
+	line -hight		  :1.2em;
+	}
+header, #container, main, section, article, footer, footer span {
+	background        : #000; /* 2. White */
+	color             : #fff; /* 3. Black */
+	}
+header #hgroup {
+	margin            : 0 auto;
+	display           : flex;
+	flex-direction    : column; /* 5. Change to vertical distribution */
+	}
+#hgroup h1, #hgroup h2 {
+	text-align        : center; /* 6 Center */
+	}
+header {
+	border-bottom     : #DDD solid 1px;
+	}
+section {
+	width             : 100%;
+	margin-bottom     : 10px;
+	}
+footer h3, footer h4 {
+	font-size         : .8em;
+	}
+img {
+	width             : 150px;
+	height            : 150px;
+	border            : #DDD solid 1px;
+	}
+	
+/***************************************************************************/	
+/* PART 2 - PAGE BREAKS                                                    */
+/***************************************************************************/
+
+p, li, pre, figure, blockquote {
+	page-break-inside     : avoid;
+	}
+
+h1,h2,h3,h4,h5 {
+	page-break-after  : avoid; /* Don´t print headings at bottom of page */
+	}
+
+section {
+	page-break-before : always; /* Start on new page */
+	}
+
+/***************************************************************************/	
+/* PART 3 - LINKS and ABBREVIATIONS                                        */
+/***************************************************************************/
+
+a:link, a:visited {
+	text-decoration   : none; /* 7. Don´t underline links */
+	background        : transparent;
+	color             : #00f; /* 8. Blue */
+	font-weight       : bold;
+	}
+main a:link:after, main a:visited:after {
+	content           : " [" attr(href) "]"; /* Show hyperlinks after */
+	font-size         : 90%; /* Smaller */
+	}
+abbr[title]:after {
+	content           : " (" attr(title) ")"; /* Show abbreviations after */
+	font-size         : 90%; /* Smaller */
+	}
+
+/***************************************************************************/
+/* PART 4 - REMOVE CONTENT and BORDERS                                     */
+/***************************************************************************/
+
+nav, aside {
+	display           : none; /* 9. None */
+	}
+abbr[title] {
+	border-bottom     : none; /* 9. None */
+	text-decoration   : none; /* 9. None */
+	}
+section {
+	border-right-style : none;} /* 9. None */
+section article, aside article {
+	border-style       : none;} /* 9. None */
+footer {
+	border-top-style   : none;} /* 9. None */

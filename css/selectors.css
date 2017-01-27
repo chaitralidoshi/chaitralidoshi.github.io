@@ -1,0 +1,56 @@
+/************************************************************************************/	
+/* Name        : selectors.css                                                      */
+/* Description : Showing Hyperlink Cues with CSS                                    */
+/* Course      : CS597 Multimedia and Web Design, SP17 AH1                          */
+/* Source      : https://askthecssguy.com/articles/showing-hyperlink-cues-with-css/ */
+/* History     : 2006-12-10 Created by Tony White                                   */
+/*               2016-01-02 Formatted by Course Instructor                          */
+/************************************************************************************/
+			
+/************************************************************************************/
+/* Internal Link                                                                    */
+/************************************************************************************/
+a[href^="#"] {
+	background    : url(../media/icons/icon_int_10x10.png) no-repeat right center;
+	padding-right : 12px;
+}
+
+/************************************************************************************/
+/* External Link                                                                    */
+/************************************************************************************/
+a[href^="http"] {
+	background    : url(../media/icons/icon_ext_10x10.gif) no-repeat right center;
+	padding-right : 12px;
+}
+
+/************************************************************************************/
+/* Redirect Link                                                                    */
+/************************************************************************************/
+a[target="_blank"] {
+	background    : url(../media/icons/icon_redir_10x10.gif) no-repeat right center;
+	padding-right : 12px;
+}
+
+/************************************************************************************/
+/* MailTo                                                                           */
+/************************************************************************************/
+a[href^="mailto:"] {
+	background    : url(../media/icons/icon_mail_10x10.png) no-repeat right center;
+	padding-right : 12px;
+}
+
+/************************************************************************************/
+/* PDF File                                                                         */
+/************************************************************************************/
+a[href$=".pdf"] {
+	background    : url(../media/icons/icon_pdf_10x10.gif) no-repeat right center;
+	padding-right : 12px;
+}
+
+/************************************************************************************/
+/* Word File                                                                        */
+/************************************************************************************/
+a[href$=".doc"], a[href$=".docx"] {
+	background    : url(../media/icons/icon_doc_10x10.gif) no-repeat right center;
+	padding-right : 12px;
+}
