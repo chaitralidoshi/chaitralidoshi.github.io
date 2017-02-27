@@ -1,26 +1,100 @@
 <!DOCTYPE html>
-<html>
-<title>Chaitrali Doshi</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/googleapis.css">
-<link rel="stylesheet" href="css/font-awsome.min.css">
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Raleway", sans-serif
-    }
-    .w3-sidenav a,
-    .w3-sidenav h4 {
-        font-weight: bold
-    }
-</style>
+
+<html lang ="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Chaitrali Doshi</title>
+
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/googleapis.css">
+	<link rel="stylesheet" href="css/font-awsome.min.css">
+
+	<style>
+	    body,
+	    h1,
+	    h2,
+	    h3,
+	    h4,
+	    h5,
+	    h6 {
+	        font-family: "Raleway", sans-serif
+	    }
+	    .w3-sidenav a,
+	    .w3-sidenav h4 {
+	        font-weight: bold
+	    
+	    /* Specify screen layout for max-width 768 pixels */
+			/* Don't forget { and }                              */
+			@media screen and (max-width: 768px){
+				body {
+					width         : 100%;
+					display       : flex;
+					height        : 100%;
+					color         : black;
+					}
+				#content {
+					flex           : 1;
+					flex-direction : column; /* 08. Specify top-to-bottom direction */
+					}
+				header {
+					height         : 90px;
+					}
+				main {
+					flex           : 1;
+					}
+				article {
+					color          : black;
+					}
+				article h2, article h3 {
+					text-align     : center;
+					}
+				nav, aside {
+					flex           : 1 1 12em;
+					}
+				nav {
+					margin-top     : 70px;
+					}
+			}
+
+			/* Specify screen layout for max-width 640 pixels */
+			/* Don't forget { and }                              */
+			@media screen and (max-width: 640px){
+				body, article {
+					color          : blue; /* 10. Set text color to blue */
+					}
+				header #hgroup {
+					flex-direction : column; /* 11. Change to top-to-bottom direction */
+					}
+				section { 
+					width          : 100%;
+					}
+				h1, h2, h3 {
+					text-align     : center;
+					margin         : 4px auto;
+					}
+				 aside, footer {
+					display        : none;
+					}
+				.article-contents {
+					flex-direction : column; /* 12. Top-to-bottom */
+					}
+				figure {
+					text-align     : center; /* 13. Center figure */
+					}
+				nav{
+					display: inline;
+				}
+				video{
+					display: none;
+				}
+			}
+
+	</style>
+</head>
+
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
     <!-- Sidenav/menu -->
@@ -46,16 +120,6 @@
 		<br />
 		
 		<!-- Contact Section -->
-		<div>
-		
-		 <a href="mailto:doshi.chaitrali@gmail.com" onclick="nav_close()" class=" w3-text-black"> <i class="fa fa-envelope fa-fw w3-margin-right"></i>doshi.chaitrali@gmail.com</a>
-		 
-		 <a href="" onclick="nav_close()" class=" w3-text-black"> <i class="fa fa-phone fa-fw w3-margin-right"></i>603-546-5270</a>
-		</div>
-		
-		<br/>
-		
-		
 		<div style = "margin-left:10px">
 		<strong>Things I connect to</strong><br />
 		
@@ -68,8 +132,17 @@
 		<a href="https://www.pinterest.com/doshichaitrali/"
 						      class="fa fa-pinterest-p w3-text-red w3-large" target="_blank" style="display:inline-block"></a>
 		</div>
+
+		<br/>
+		<div>
+		
+		 <a href="mailto:doshi.chaitrali@gmail.com" onclick="nav_close()" class=" w3-text-black"> <i class="fa fa-envelope fa-fw w3-margin-right"></i>doshi.chaitrali@gmail.com</a>
+		 
+		 <a href="" onclick="nav_close()" class=" w3-text-black"> <i class="fa fa-phone fa-fw w3-margin-right"></i>603-546-5270</a>
+		</div>
 		
     </nav>
+
     <!-- Overlay effect when opening sidenav on small screens -->
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="nav_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     <!-- !PAGE CONTENT! -->
@@ -82,23 +155,26 @@
         </header>
 
 
-        <div class="w3-container w3-padding-large" id="about">
+        <div class="w3-container w3-padding-small" id="about">
             <h4><b>About Me</b></h4>
             <div class="w3-container w3-white">
-                <p>Hi, I am Chaitrali Doshi. I am currently pursuing Master's from Rivier University. I have come to Rivier University to study Computer Science because I want to learn more about technology.</p>
+                <p>Hello, I am Chaitrali Doshi. I am currently working on my Master’s degree at Rivier University, Nashua, NH, where apart from my curriculum, I engage in learning new programming languages,
+                 and work on personal tech-projects. </p>
+                <p>It really amuses me, how technology is evolving and integrating with our daily lives at an exponential rate. The only way for majority of people to experience this is through a User Interface. 
+                With the help of my drive and skills I want to be someone who plays a part in this rather than being a mere spectator.</p>
             </div>
          
 		<div class="w3-container w3-white" align ="middle" >
-		<video width="640" height="480"  controls poster="images/First.jpg">
-			<source src="media/video/MyIntroduction.mp4" type="video/mp4">
-  
-				Your browser does not support the video tag.
-		</video>
-		
+			<video width="640" height="480"  controls poster="images/First.jpg">
+				<source src="media/video/MyIntroduction.mp4" type="video/mp4">
+	  
+					Your browser does not support the video tag.
+			</video>
 		</div>
 		
 
     </div>
+
     <script>
         // Script to open and close sidenav
         function nav_open() {
